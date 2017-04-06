@@ -1,0 +1,6 @@
+﻿Intruções:
+
+ - Fonte: Lato
+ - Peso da fonte: 300
+ - Peso dos títulos: 500
+ - Cor ativa: rgb(127, 82, 161)
