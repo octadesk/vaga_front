@@ -1,49 +1,69 @@
-#Teste para candidatos à vaga de desenvolvedor Front-End
-Nesta etapa, você vai precisar desenvolver um **slide-show** com base nas imagens disponíveis no diretório layout.
-O conteúdo para cada slide encontra-se no diretório "conteudo", os textos separados por tópicos no arquivo de extensão ".docx", e as imagens com seus respectivos nomes.
+# Teste para candidatos à vaga de desenvolvedor Front-End
 
+Nesta etapa, você deverá desenvolver uma tela de listagem de usuários e outra para gerenciar as informações desses usuários. Ao final, a aplicação deve exibir no console um JSON com os dados atualizados do usuário, que serão enviados para uma API.
 
-##Instruções:
+Você pode utilizar a [API DummyJSON](https://dummyjson.com/docs/users) para obter uma lista de usuários. Existem outros endpoints relacionados ao usuário na documentação, caso necessário.
 
-	1. Para iniciar o teste, faça um fork deste repositório;
-	2. Crie um branch com o seu nome;
-	3. Implemente os arquivos desenvolvidos;
-	3. Após terminar, submeta um pull request e aguarde seu feedback.
+## Desafio:
 
-	Observação: Se você apenas clonar o repositório não vai conseguir fazer push e depois vai ser mais complicado fazer o pull request.
+- Crie uma tela que liste os usuários de uma plataforma:
+  - Apresente na listagem informações relevantes de cada usuário para facilitar a identificação;
+  - Ao selecionar um usuário da lista, deve-se navegar para uma tela de edição e detalhes;
+- Crie uma tela que apresente os detalhes de um usuário;
+  - Os dados do usuário devem ser editáveis, com campos de input correspondentes;
+  - Os campos devem incluir validação de dados;
+  - É necessário ter pelo menos 8 campos editáveis;
+  - Criar botões de cancelar e salvar edição:
+    - Botão de cancelar volta o usuário para a lista;
+    - Botão de salvar deve jogar no console o JSON que seria utilizado para enviar no payload de uma API:
+    ```json
+    {
+    	"id": 1,
+    	"firstName": "John",
+    	"lastName": "Doe",
+    	...
+    }
+    ```
 
+## Instruções:
 
-##Você pode:
+1. Para iniciar o teste, faça um fork deste repositório;
+2. Crie um branch com o seu nome;
+3. Crie o diretório /octa-app e desenvolva a aplicação nesse diretório;
+4. Após terminar, submeta um pull request e aguarde seu feedback.
 
-	- Utilizar qualquer linguagem de preprocessador css ou css puro;
-	- Utilizar um task runner de sua preferência;
-	- Utilizar bibliotecas css como compass, bourbon, animatecss ou outras;
-	- Utilizar componentes do bower;
-	- Utilizar frameworks css, js.
+   Observação: Se você apenas clonar o repositório não vai conseguir fazer push e depois vai ser mais complicado fazer o pull request.
 
+## Requisitos:
 
-##Ganhe pontos extras por:
+- Crie um cliente HTTP com Axios ou Fetch;
+- Desenvolva uma experiência de navegação agradável e fluida;
+- Utiliza uma SPA com rotas nomeadas;
+- Utilize commits atômicos;
+- Crie um arquivo com todas as instruções necessárias para rodar o projeto;
 
-	- Desenvolver HTML semântico;
-	- Utilizar boas práticas de SEO;
-	- Componentizar seu css.
+## Você pode:
 
+- Utilizar CSS puro, pré-processador, pós-processador ou framework CSS;
+- Utilizar qualquer framework JavaScript;
+  - Utilizar biblioteca de componentes e ícones;
+  - Utilizar ferramentas de build;
+- Utilizar biblioteca de gerenciamento de estado;
 
-##Breakpoints:
+## O que nós vamos avaliar:
 
-    - 320px;
-    - 768px;
-    - 1024px;
-    - 1280px.
+- HTML semântico;
+- Boas práticas de SEO;
+- Componentização;
+- Navegação pela aplicação;
+- Funcionamento correto do projeto sem erros;
+- Tratamento de dados;
+- Qualidade do código;
+- Legibilidade;
+- Consistência no estilo do código;
 
+## Ganha pontos extras se:
 
-##Desenvolva utilizando:
-
-	- Fonte: Lato;
-	- Peso da fonte: 300;
-	- Peso dos títulos: 500;
-	- Cor ativa: rgb(127, 82, 161);
-	- Espaçamento: 24px.
-
-
-Boa sorte!
+- Criar testes unitários;
+- Utilizar Vue.js;
+- Utilizar TypeScript;
